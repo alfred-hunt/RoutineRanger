@@ -1,0 +1,52 @@
+name: User Story
+description: Create a new user story
+title: "User Story: "
+labels: [user story, needs-triage]
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: "## User Story Template\n\nThank you for contributing a user story. Please fill out the following template to the best of your ability. This will help ensure that your user story is understood and actionable."
+  
+  - type: input
+    id: user-story-title
+    attributes:
+      label: User Story Title
+      description: "A concise title for the user story."
+      placeholder: "As a [role], I want [feature] so that [reason]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-story-description
+    attributes:
+      label: User Story Description
+      description: "Describe the user story in detail."
+      placeholder: "Provide a detailed description of the user story."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "List the criteria to consider the story completed."
+      placeholder: "1. Criteria 1\n2. Criteria 2\n3. Criteria 3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context (Optional)
+      description: "Add any other context or screenshots about the user story here."
+      placeholder: "Add context or links to relevant resources."
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      description: "Please confirm the following:"
+      options:
+        - label: "I have reviewed the user story and believe it is complete."
+          required: true
